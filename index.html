@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Hover Animate Image Using Freezeframe.js</title>
+    <link rel="stylesheet" href="https://unpkg.com/freezeframe@3.0.10/build/css/freezeframe_styles.min.css">
+    <style type="text/css">
+      body{
+      margin: 0;
+      }
+      img,canvas,.ff-container{
+      width: 100%;
+      height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="images" src="https://wallpapercave.com/wp/wp2239808.gif" />
+    <script type="text/javascript" src="https://unpkg.com/freezeframe@3.0.10/build/js/freezeframe.pkgd.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        first = new freezeframe('.images').freeze();
+      })
+    </script>
+  </body>
+</html>
